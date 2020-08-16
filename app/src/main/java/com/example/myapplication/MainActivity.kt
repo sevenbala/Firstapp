@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         var testText: String = ""
+        //test git
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
