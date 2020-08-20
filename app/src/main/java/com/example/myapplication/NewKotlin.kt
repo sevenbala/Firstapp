@@ -1,6 +1,12 @@
 package com.example.myapplication
+fun main() {
+    infix fun Int.times(str: String) = str.repeat(this)
+    println(2 times "Bye ")
 
-class MyFirstKotlinClass{
+    val pair = "Mark" to "Celine"
+    println(pair)
 
-val count : Int = 0
+    infix fun String.onto(other: String) = Pair(this, other)
+    val myPair = "McLaren" onto "Lucas"
+    println(myPair)
 }
