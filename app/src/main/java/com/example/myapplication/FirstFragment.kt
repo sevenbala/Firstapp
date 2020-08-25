@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
+import androidx.viewpager2.widget.ViewPager2
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -19,6 +21,7 @@ class FirstFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_first, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -27,5 +30,6 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+        view.findViewById<TextView>(R.id.textview_first).text = "ewoiiefnve"
     }
 }
